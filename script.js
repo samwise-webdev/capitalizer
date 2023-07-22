@@ -23,3 +23,8 @@ const submission = form.addEventListener('submit', function (e) {
     result.append(p); //add the input value to the page
     input.value = ''; //reset the input field to blank
 })
+
+// const capitalizer = form.addEventListener('submit', function (e) {
+//     const name = input.value;
+//     name = name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase();
+// })  //doesn't work, not sure how to apply slice to the input value
