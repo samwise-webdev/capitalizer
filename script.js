@@ -14,3 +14,12 @@
 const form = document.querySelector('#capitalizer');
 const input = document.querySelector('#capitalizeMe');
 const result = document.querySelector('#result');
+
+const submission = form.addEventListener('submit', function (e) {
+    e.preventDefault(); //prevent redirect
+    const name = input.value; //set the input to a variable
+    const p = document.createElement('p'); //add a p element to the page
+    p.innerText = name; //set the text to the input value from name variable
+    result.append(p); //add the input value to the page
+    input.value = ''; //reset the input field to blank
+})
