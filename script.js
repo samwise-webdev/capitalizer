@@ -3,8 +3,6 @@ function capitalize(firstWord, secondWord){
     
     secondWord = secondWord.slice(0,1).toUpperCase() + secondWord.slice(1).toLowerCase();
     
-     
-    
     console.log(firstWord, secondWord);
     
     return [firstWord, secondWord]; }
