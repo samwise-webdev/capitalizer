@@ -1,11 +1,10 @@
-function capitalize(firstWord, secondWord){
-    firstWord = firstWord.slice(0,1).toUpperCase() + firstWord.slice(1).toLowerCase();  
+function capitalize(submission, secondWord){
+    submission = submission.slice(0,1).toUpperCase() + submission.slice(1).toLowerCase();  
     secondWord = secondWord.slice(0,1).toUpperCase() + secondWord.slice(1).toLowerCase();    
-    console.log(firstWord, secondWord);  
-    return [firstWord, secondWord]; }
+    console.log(submission, secondWord);  
+    return [submission, secondWord]; }
 const capBtn = document.querySelector('#capMe');
 capBtn.addEventListener('click', capitalize);
-capitalize('bob', 'barker');
 
 const form = document.querySelector('#capitalizer');
 const input = document.querySelector('#capitalizeMe');
