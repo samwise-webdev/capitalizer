@@ -7,7 +7,7 @@
 // capBtn.addEventListener('click', capitalize);
 
 const form = document.querySelector('#capitalizer');
-const input = document.querySelector('input');
+const input = document.querySelector('#capitalizeMe');
 const result = document.querySelector('#result');
 
 const submission = form.addEventListener('submit', function (e) {
