@@ -14,9 +14,9 @@ const submission = form.addEventListener('submit', function (e) {
     e.preventDefault(); //prevent redirect
     let name = input.value; //set the input to a variable
     name = name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase();
-    const p = document.createElement('p'); //add a p element to the page
-    p.innerText = name; //set the text to the input value from name variable
-    result.append(p); //add the input value to the page
+    const span = document.createElement('span'); //add a p element to the page
+    span.innerText = `${name} `; //set the text to the input value from name variable
+    result.append(span); //add the input value to the page
     input.value = ''; //reset the input field to blank
 })
 
